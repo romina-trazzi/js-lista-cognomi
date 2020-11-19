@@ -49,8 +49,13 @@ for (var i = 0; i < listSurname.length; i++) {
     document.getElementById("cognomi").innerHTML = listContent + "<li>" + item + "</li>";  
 }
 
+// Mettiamo il cognome utente la "posizione umana" partendo da uno
+var position = listSurname.indexOf(userSurname) + 1;
+
+console.log(position);
+
 // Inseriamo un alert per segnalare la posizione nell'array del nuovo utente alias userSurname
-alert("La posizione nell'indice del nuovo utente è la numero " + listSurname.indexOf(userSurname) + ".");
+alert("La posizione nell'indice del nuovo utente è la numero " + position +  ".");
 
 
 
